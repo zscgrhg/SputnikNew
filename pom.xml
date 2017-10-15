@@ -186,9 +186,8 @@
         </pluginRepository>
     </pluginRepositories>
     <profiles>
-
+        <!-- windows-->
         <profile>
-            <!-- 本地开发环境 -->
             <id>windows</id>
             <activation>
                 <os>
@@ -202,7 +201,6 @@
                 <ie.driverPath>${project.basedir}/driver/IEDriverServer.exe</ie.driverPath>
             </properties>
         </profile>
-
         <!-- 本地开发环境 -->
         <profile>
             <id>develop</id>
@@ -213,13 +211,14 @@
                 <geb.baseUrl></geb.baseUrl>
             </properties>
         </profile>
+        <!-- CI -->
         <profile>
-            <id>test</id>
+            <id>CI</id>
             <properties>
                 <geb.baseUrl></geb.baseUrl>
             </properties>
         </profile>
-
+        <!-- automation-firefox -->
         <profile>
             <id>automation-firefox</id>
             <build>
@@ -254,7 +253,7 @@
                 </plugins>
             </build>
         </profile>
-
+        <!-- automation-chrome -->
         <profile>
             <id>automation-chrome</id>
             <build>
@@ -289,8 +288,7 @@
                 </plugins>
             </build>
         </profile>
-
-
+        <!-- automation-htmlunit -->
         <profile>
             <id>automation-htmlunit</id>
             <build>
@@ -324,8 +322,7 @@
                 </plugins>
             </build>
         </profile>
-
-
+        <!-- automation-ie -->
         <profile>
             <id>automation-ie</id>
             <build>
@@ -360,8 +357,7 @@
                 </plugins>
             </build>
         </profile>
-
-
+        <!-- automation-edge -->
         <profile>
             <id>automation-edge</id>
             <build>
