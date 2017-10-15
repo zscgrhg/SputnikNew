@@ -195,10 +195,10 @@
                 </os>
             </activation>
             <properties>
-                <firefox.driverPath>${project.basedir}/driver/geckodriver.exe</firefox.driverPath>
-                <chrome.driverPath>${project.basedir}/driver/chromedriver.exe</chrome.driverPath>
-                <edge.driverPath>${project.basedir}/driver/MicrosoftWebDriver.exe</edge.driverPath>
-                <ie.driverPath>${project.basedir}/driver/IEDriverServer.exe</ie.driverPath>
+                <firefox.driverPath>${project.basedir}/driver/windows/geckodriver.exe</firefox.driverPath>
+                <chrome.driverPath>${project.basedir}/driver/windows/chromedriver.exe</chrome.driverPath>
+                <edge.driverPath>${project.basedir}/driver/windows/MicrosoftWebDriver.exe</edge.driverPath>
+                <ie.driverPath>${project.basedir}/driver/windows/IEDriverServer.exe</ie.driverPath>
             </properties>
         </profile>
         <!-- 本地开发环境 -->
